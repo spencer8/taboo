@@ -1,0 +1,458 @@
+/*------------------------------------*\
+    $TABLE OF CONTENTS 
+\*------------------------------------*/
+/**
+ * VARIABLES..............................Declarations of Sass variables 
+ * .....Colors
+ * .....Typography
+ * .....Layout
+ * .....Defaults
+ * .....Breakpoints
+ * MIXINS.................................Sass mixins 
+ * RESET..................................Set reset defaults
+ * GLOBAL CLASSES.........................Set reset defaults
+ * GLOBAL ELEMENTS........................Establish global styles
+ * .....Main
+ * .....Headings
+ * .....Text-related elements (p, blockquote, lists)
+ * .....Defaults
+ * .....Breakpoints
+ * TYPOGRAPHY------------------------------
+ * MEDIA------------------------------
+ * LAYOUT------------------------------
+ * NAVIGATION------------------------------
+ * TOC To Be Continued
+ */
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
+\*------------------------------------*/
+/* Links */
+/* line 2, scss/base/_links.scss */
+.post a {
+  font-weight: 600;
+  color: #794dc0;
+}
+/* line 5, scss/base/_links.scss */
+.post a a:hover {
+  color: #a566dd;
+  text-decoration: underline;
+}
+
+/* Headings */
+/* Text-Related Elements */
+/* line 3, scss/base/_text.scss */
+#main-content .entry-content ul li, #main-content .entry-content ol li {
+  text-indent: -1em;
+  padding-left: 1em;
+  margin-bottom: .25em;
+}
+
+/* line 9, scss/base/_text.scss */
+.rev_slider .Taboo-title {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* line 19, scss/base/_text.scss */
+h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+/* line 5, scss/base/_media.scss */
+.widget_twitter div {
+  padding: 0;
+}
+
+/* line 9, scss/base/_media.scss */
+.widget_twitter ul li {
+  margin-bottom: 5px;
+}
+
+/* line 13, scss/base/_media.scss */
+.widget_twitter .follow-button,
+.widget_twitter .xavisys-link {
+  margin: 0 10px 10px 25px;
+}
+
+/* line 18, scss/base/_media.scss */
+.widget_twitter .entry-meta {
+  display: block;
+  font-size: 80%;
+}
+
+/* line 23, scss/base/_media.scss */
+.widget_twitter .intent-meta a {
+  background: url(images/everything-sprite.png);
+  /** from Twitter ressources */
+  display: inline-block;
+  height: 16px;
+  text-indent: -9999px;
+  width: 16px;
+}
+
+/* line 30, scss/base/_media.scss */
+.widget_twitter .intent-meta a.in-reply-to {
+  background-position: 0 center;
+}
+
+/* line 33, scss/base/_media.scss */
+.widget_twitter .intent-meta a:hover.in-reply-to {
+  background-position: -16px center;
+}
+
+/* line 36, scss/base/_media.scss */
+.widget_twitter .intent-meta a.favorite {
+  background-position: -32px center;
+}
+
+/* line 39, scss/base/_media.scss */
+.widget_twitter .intent-meta a:hover.favorite {
+  background-position: -48px center;
+}
+
+/* line 42, scss/base/_media.scss */
+.widget_twitter .intent-meta a.retweet {
+  background-position: -80px center;
+}
+
+/* line 45, scss/base/_media.scss */
+.widget_twitter .intent-meta a:hover.retweet {
+  background-position: -96px center;
+}
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+/* line 1, scss/objects/_header.scss */
+#logo img {
+  max-height: 100% !important;
+  top: 4px;
+  position: relative;
+}
+
+/* line 6, scss/objects/_header.scss */
+#header-inner.stuck #logo img {
+  max-height: 100% !important;
+}
+
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+/* line 5, scss/objects/_nav.scss */
+#main-nav > li > a > span {
+  top: 10px;
+}
+
+/* line 8, scss/objects/_nav.scss */
+#main-nav > li#nav-search {
+  margin-top: 3px;
+}
+
+/* line 11, scss/objects/_nav.scss */
+#main-nav li a i {
+  margin-top: 17px !important;
+}
+
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+/* line 5, scss/objects/_main.scss */
+.home #main-content {
+  padding-top: 0;
+  margin-top: -1px;
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEXT
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/* line 4, scss/objects/_buttons.scss */
+.woocommerce #footer input.button {
+  background: #5d3e8e;
+}
+/* line 6, scss/objects/_buttons.scss */
+.woocommerce #footer input.button:hover {
+  color: #FFF;
+  color: white !important;
+  box-shadow: 0 3px 0 0 black;
+  background: #323436;
+}
+
+/*------------------------------------*\
+    $Sections
+\*------------------------------------*/
+/*******************/
+/* 1. Blog Roll */
+/*******************/
+/* line 7, scss/objects/_sections.scss */
+.small-post-content {
+  float: left;
+  width: 100%;
+}
+
+/* line 12, scss/objects/_sections.scss */
+.has-post-thumbnail .small-post-content {
+  width: 50%;
+}
+
+/* line 16, scss/objects/_sections.scss */
+.hb-blog-small .small-post-content h3.title {
+  clear: both;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+/* line 24, scss/objects/_sections.scss */
+article.search-entry .excerpt-wrap {
+  margin-left: 130px;
+}
+/* line 30, scss/objects/_sections.scss */
+article.search-entry a.search-thumb .hb-spl-thumb {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+/* line 37, scss/objects/_sections.scss */
+article.search-entry a.search-thumb .hb-spl-thumb img {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+/* line 47, scss/objects/_sections.scss */
+.search-result-counter {
+  display: none;
+}
+
+/* line 50, scss/objects/_sections.scss */
+.hb-sidebar .widget-item h4 {
+  font-size: 15px;
+  color: #5d3e8e;
+}
+/* line 55, scss/objects/_sections.scss */
+.hb-sidebar .widget-item.widget_categories ul li, .hb-sidebar .widget-item.widget_recent_entries ul li {
+  padding: 0;
+}
+/* line 59, scss/objects/_sections.scss */
+.hb-sidebar .widget-item.widget_categories ul li a, .hb-sidebar .widget-item.widget_recent_entries ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 7px 0;
+  box-sizing: border-box;
+}
+/* line 65, scss/objects/_sections.scss */
+.hb-sidebar .widget-item.widget_categories ul li a:hover, .hb-sidebar .widget-item.widget_recent_entries ul li a:hover {
+  color: #fff;
+  background: #5d3e8e;
+  padding-left: 10px;
+}
+/* line 70, scss/objects/_sections.scss */
+.hb-sidebar .widget-item.widget_categories ul li a:hover::before, .hb-sidebar .widget-item.widget_recent_entries ul li a:hover::before {
+  display: none;
+}
+
+/* line 78, scss/objects/_sections.scss */
+.minor_meta {
+  font-size: 15px;
+}
+/* line 81, scss/objects/_sections.scss */
+.minor_meta .share-holder {
+  margin-top: 0;
+}
+
+/* line 86, scss/objects/_sections.scss */
+.small-post-content .share-holder {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+/*******************/
+/* 2. Porn Corner */
+/*******************/
+/* line 95, scss/objects/_sections.scss */
+.rating {
+  float: left;
+  height: 41px;
+  margin: 0 20px 10px 0;
+  width: 100px;
+}
+
+/* line 101, scss/objects/_sections.scss */
+.single .rating {
+  width: 100%;
+}
+
+/* line 104, scss/objects/_sections.scss */
+.rating > div {
+  background: url("images/spritesheet.png") repeat-x scroll -310px -40px transparent;
+  float: left;
+  height: 41px;
+  margin: 0 6px 0 0;
+  width: 14px;
+}
+
+/* line 111, scss/objects/_sections.scss */
+.rating > div.rate-half {
+  background-position: -290px -40px;
+}
+
+/* line 114, scss/objects/_sections.scss */
+.rating > div.rate-full {
+  background-position: -270px -40px;
+}
+
+/*******************/
+/* 3. Team Member */
+/*******************/
+/* line 122, scss/objects/_sections.scss */
+.team-member-box {
+  overflow: hidden;
+  position: relative;
+  background: #694489;
+}
+
+/* line 127, scss/objects/_sections.scss */
+.team-member-img {
+  margin-bottom: 0;
+  display: block;
+  padding-top: 100%;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 135, scss/objects/_sections.scss */
+.team-member-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 140, scss/objects/_sections.scss */
+.team-member-description {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: #694489;
+  padding: 1em 0;
+  display: none;
+}
+
+/* line 151, scss/objects/_sections.scss */
+.team-member-box:hover .team-member-description {
+  display: block;
+}
+
+/* line 154, scss/objects/_sections.scss */
+.team-member-content,
+.team-member-description .spacer,
+.team-member-description .simple-read-more {
+  display: none;
+}
+
+/* line 159, scss/objects/_sections.scss */
+.team-member-box a.team-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 167, scss/objects/_sections.scss */
+.team-member-name {
+  font-family: 'Open Sans', 'Museo500Regular', Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 173, scss/objects/_sections.scss */
+.widget_twitter .widget-title {
+  display: none;
+}
+
+/* line 176, scss/objects/_sections.scss */
+.txt-inpt {
+  margin-bottom: .5em;
+}
+
+/* line 179, scss/objects/_sections.scss */
+#hb-page-title h1, #hb-page-title h2 {
+  margin: 0 0 0 30px;
+}
+
+/* line 182, scss/objects/_sections.scss */
+.vc_grid .vc_col-sm-6 .vc_gitem-post-data:first-of-type {
+  display: none;
+}
+
+/* line 185, scss/objects/_sections.scss */
+.tbu-contact-map h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/*******************/
+/* 3. Home */
+/*******************/
+/* line 192, scss/objects/_sections.scss */
+.mobile-banner {
+  max-height: 300px;
+  overflow: hidden;
+}
+@media screen and (min-width: 700px) {
+  /* line 192, scss/objects/_sections.scss */
+  .mobile-banner {
+    display: none;
+  }
+}
+/* line 200, scss/objects/_sections.scss */
+.mobile-banner img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 206, scss/objects/_sections.scss */
+  .rev_slider_wrapper {
+    display: none;
+  }
+}

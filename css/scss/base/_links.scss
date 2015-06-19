@@ -1,0 +1,9 @@
+/* Links */ 
+.post a {
+	font-weight: 600;
+	color: #794dc0;
+	& a:hover {
+		color: #a566dd;
+		text-decoration:underline;
+	}
+}
