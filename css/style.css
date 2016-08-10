@@ -132,6 +132,68 @@ h4, h5, h6 {
   background-position: -96px center;
 }
 
+/* line 49, scss/base/_media.scss */
+.soliloquy-outer-container .soliloquy-container .soliloquy-caption.soliloquy-caption-right {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(93, 62, 142, 0.78);
+}
+/* line 56, scss/base/_media.scss */
+.soliloquy-outer-container .soliloquy-container .soliloquy-caption.soliloquy-caption-right .soliloquy-caption-inside {
+  font-size: 1.125em;
+  line-height: 1.5;
+  display: block;
+  color: #fff;
+  text-shadow: 0 1px 1px #240c4a;
+  text-align: left;
+  padding: 5% 26% 5% 7%;
+  height: auto;
+  background: transparent;
+}
+/* line 67, scss/base/_media.scss */
+.soliloquy-outer-container .soliloquy-container .soliloquy-caption.soliloquy-caption-right .soliloquy-caption-inside b {
+  display: block;
+  font-size: 1.75em;
+  font-family: Lato, san-serif;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: .25em;
+  text-shadow: 0 1px 1px #240c4a;
+}
+
+/* line 79, scss/base/_media.scss */
+.video-overlay.no-overlay {
+  display: none !important;
+}
+
+/* Blog Shortcode */
+@media screen and (min-width: 767px) {
+  /* line 84, scss/base/_media.scss */
+  .shortcode-blog-3up {
+    margin-left: -10px;
+    margin-right: -20px;
+  }
+}
+
+/* line 91, scss/base/_media.scss */
+.blog-shortcode-1 {
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 767px) {
+  /* line 91, scss/base/_media.scss */
+  .blog-shortcode-1 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    height: auto;
+    width: 33%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
@@ -335,17 +397,50 @@ article.search-entry a.search-thumb .hb-spl-thumb img {
   background-position: -270px -40px;
 }
 
+/* line 117, scss/objects/_sections.scss */
+.post a {
+  font-weight: 600;
+  color: #794dc0;
+}
+/* line 121, scss/objects/_sections.scss */
+.post a:hover {
+  color: #a566dd;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 540px) {
+  /* line 129, scss/objects/_sections.scss */
+  .hb-blog-small .featured-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* line 133, scss/objects/_sections.scss */
+  .has-post-thumbnail .small-post-content {
+    width: 100%;
+  }
+}
 /*******************/
 /* 3. Team Member */
 /*******************/
-/* line 122, scss/objects/_sections.scss */
+/* line 140, scss/objects/_sections.scss */
+.mobile-device .crsl-item {
+  width: 100%;
+}
+
+/* line 143, scss/objects/_sections.scss */
+.mobile-crsl-item {
+  margin-bottom: 2em;
+}
+
+/* line 146, scss/objects/_sections.scss */
 .team-member-box {
   overflow: hidden;
   position: relative;
   background: #694489;
 }
 
-/* line 127, scss/objects/_sections.scss */
+/* line 151, scss/objects/_sections.scss */
 .team-member-img {
   margin-bottom: 0;
   display: block;
@@ -355,14 +450,14 @@ article.search-entry a.search-thumb .hb-spl-thumb img {
   overflow: hidden;
 }
 
-/* line 135, scss/objects/_sections.scss */
+/* line 159, scss/objects/_sections.scss */
 .team-member-img img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 140, scss/objects/_sections.scss */
+/* line 164, scss/objects/_sections.scss */
 .team-member-description {
   position: absolute;
   top: 50%;
@@ -375,19 +470,19 @@ article.search-entry a.search-thumb .hb-spl-thumb img {
   display: none;
 }
 
-/* line 151, scss/objects/_sections.scss */
+/* line 175, scss/objects/_sections.scss */
 .team-member-box:hover .team-member-description {
   display: block;
 }
 
-/* line 154, scss/objects/_sections.scss */
+/* line 178, scss/objects/_sections.scss */
 .team-member-content,
 .team-member-description .spacer,
 .team-member-description .simple-read-more {
   display: none;
 }
 
-/* line 159, scss/objects/_sections.scss */
+/* line 183, scss/objects/_sections.scss */
 .team-member-box a.team-link {
   width: 100%;
   height: 100%;
@@ -397,62 +492,120 @@ article.search-entry a.search-thumb .hb-spl-thumb img {
   left: 0;
 }
 
-/* line 167, scss/objects/_sections.scss */
+/* line 191, scss/objects/_sections.scss */
 .team-member-name {
   font-family: 'Open Sans', 'Museo500Regular', Arial;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 173, scss/objects/_sections.scss */
+/* line 197, scss/objects/_sections.scss */
 .widget_twitter .widget-title {
   display: none;
 }
 
-/* line 176, scss/objects/_sections.scss */
+/* line 200, scss/objects/_sections.scss */
 .txt-inpt {
   margin-bottom: .5em;
 }
 
-/* line 179, scss/objects/_sections.scss */
+/* line 203, scss/objects/_sections.scss */
 #hb-page-title h1, #hb-page-title h2 {
   margin: 0 0 0 30px;
 }
 
-/* line 182, scss/objects/_sections.scss */
+/* line 206, scss/objects/_sections.scss */
 .vc_grid .vc_col-sm-6 .vc_gitem-post-data:first-of-type {
   display: none;
 }
 
-/* line 185, scss/objects/_sections.scss */
+/* line 209, scss/objects/_sections.scss */
 .tbu-contact-map h3 {
   font-size: 24px;
   line-height: 24px;
 }
 
+@media handheld, only screen and (max-width: 767px) {
+  /* line 214, scss/objects/_sections.scss */
+  .shortcode-wrapper.shortcode-team-member-box .row .col-2 {
+    width: 50% !important;
+  }
+}
 /*******************/
 /* 3. Home */
 /*******************/
-/* line 192, scss/objects/_sections.scss */
+/* line 222, scss/objects/_sections.scss */
 .mobile-banner {
-  max-height: 300px;
   overflow: hidden;
+  display: block;
+}
+/* line 223, scss/objects/_sections.scss */
+.mobile-banner .wpb_content_element {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 700px) {
-  /* line 192, scss/objects/_sections.scss */
+  /* line 222, scss/objects/_sections.scss */
   .mobile-banner {
     display: none;
   }
 }
-/* line 200, scss/objects/_sections.scss */
+/* line 233, scss/objects/_sections.scss */
 .mobile-banner img {
   width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 206, scss/objects/_sections.scss */
+  /* line 239, scss/objects/_sections.scss */
   .rev_slider_wrapper {
     display: none;
+  }
+}
+
+/* line 246, scss/objects/_sections.scss */
+#av_verify {
+  margin-top: 20px;
+}
+/* line 249, scss/objects/_sections.scss */
+#av_verify h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+/* line 254, scss/objects/_sections.scss */
+#av-overlay {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 4, scss/objects/_article.scss */
+  #main-content .container .hb-main-content.col-9 {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    margin-top: 0 !important;
+  }
+
+  /* line 12, scss/objects/_article.scss */
+  #main-content .container .hb-sidebar {
+    width: 100% !important;
+    border-right: none !important;
+    border-left: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
+  }
+
+  /* line 21, scss/objects/_article.scss */
+  .float-right .share-holder {
+    display: block !important;
+  }
+  /* line 24, scss/objects/_article.scss */
+  .post-header .float-right .share-holder {
+    margin-top: 0;
   }
 }

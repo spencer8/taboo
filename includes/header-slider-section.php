@@ -50,7 +50,7 @@ if ( function_exists('is_woocommerce') && is_woocommerce() ) {
 			print do_shortcode('[rev_slider ' . $rev_slider . ']');
 			
 // alternate banner image for revolution slider on mobile
-			//if ( wp_is_mobile() ) {
+			if ( wp_is_mobile() ) {
 			//$thispageid = get_the_ID();
 			//$altbanner = get_the_post_thumbnail( $thispageid, "full" );
 
@@ -59,7 +59,7 @@ if ( function_exists('is_woocommerce') && is_woocommerce() ) {
 			<?php print do_shortcode('[vc_widget_sidebar sidebar_id="hb-custom-sidebar-sidebarnavigation1"]') ?>
 			</div>
 			<?php
-			//}
+			}
 
 			
 		}

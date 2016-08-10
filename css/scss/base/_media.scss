@@ -45,3 +45,58 @@
 .widget_twitter .intent-meta a:hover.retweet {
     background-position: -96px center;
 }
+
+.soliloquy-outer-container .soliloquy-container .soliloquy-caption.soliloquy-caption-right {
+    width:47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(93,62,142,0.78);
+
+    .soliloquy-caption-inside {
+        font-size: 1.125em;
+        line-height: 1.5;
+        display: block;
+        color: #fff;
+        text-shadow: 0 1px 1px #240c4a;
+        text-align: left;
+        padding: 5% 26% 5% 7%;
+        height:auto;
+        background:transparent;
+
+        b {
+            display:block;
+            font-size:1.75em;
+            font-family:Lato, san-serif;
+            font-weight:300;
+            line-height:1.25;
+            margin-bottom:.25em;
+            text-shadow: 0 1px 1px #240c4a;
+
+        }
+    }
+}
+.video-overlay.no-overlay {
+    display: none!important;
+}
+
+/* Blog Shortcode */
+.shortcode-blog-3up {
+
+    @media screen and (min-width:$bp-med){
+        margin-left:-10px;
+        margin-right:-20px;
+    }
+}
+.blog-shortcode-1 {
+    margin-bottom:2em;
+    @media screen and (min-width:$bp-med){
+        position: relative;
+        float: left;
+        overflow: hidden;
+        height: auto;
+        width: 33%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}

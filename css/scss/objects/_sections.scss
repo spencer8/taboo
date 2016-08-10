@@ -114,11 +114,35 @@ article.search-entry {
 .rating > div.rate-full {
 	background-position:-270px -40px;
 }
+.post a {
+  font-weight: 600;
+  color: #794dc0;
 
+	&:hover {
+	  color: #a566dd;
+	  text-decoration:underline;
+	}
+}
+
+
+@media only screen and (max-width: 540px) {
+    .hb-blog-small .featured-image {
+        width:100%;
+        max-width:100%;
+    }
+    .has-post-thumbnail .small-post-content {
+      width: 100%;
+    }
+}
 /*******************/
 /* 3. Team Member */
 /*******************/
-
+.mobile-device .crsl-item {
+    width: 100%;
+}
+.mobile-crsl-item {
+    margin-bottom:2em;
+}
 .team-member-box {
   overflow: hidden;
   position: relative;
@@ -186,13 +210,22 @@ width: 100%;
    font-size: 24px;
   line-height: 24px
 }
+@media handheld, only screen and (max-width: 767px) {
+    .shortcode-wrapper.shortcode-team-member-box .row .col-2 {
+      width: 50%!important;
+    }
+    
+}
 /*******************/
 /* 3. Home */
 /*******************/
 .mobile-banner{
-	max-height: 300px;
+	.wpb_content_element {
+	  margin-bottom: 0;
+	}
   	overflow: hidden;
-
+  	display:block;
+  	
 	@media screen and (min-width: 700px) {
 		display:none;
 	}
@@ -205,8 +238,20 @@ width: 100%;
 }
 .rev_slider_wrapper {
 
-@media screen and (max-width: 700px) {
-	display:none;
-}
+	@media screen and (max-width: 700px) {
+		display:none;
+	}
 	
+}
+#av_verify {
+    margin-top:20px;
+
+    h1 {
+	    font-size: 32px;
+	    line-height: 40px;
+	}
+}
+#av-overlay {
+    text-align:center;
+    box-sizing: border-box;
 }
