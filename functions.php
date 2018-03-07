@@ -5,7 +5,7 @@
 define ( 'TBUCHILD_CSS' , get_stylesheet_directory_uri() . '/css' );
 define ( 'TBUCHILD_ADMIN' , get_stylesheet_directory_uri() . '/admin' );
 define ( 'TBUCHILD_INCLUDES' , get_stylesheet_directory_uri() . '/includes' );
-$version = "?v="."20151209";
+$version = "?v="."20160810";
 
 function hb_tbu_styles_setup () {
 
@@ -14,6 +14,7 @@ function hb_tbu_styles_setup () {
 
 	wp_enqueue_style( 'taboo_style_overrides' );
 	wp_enqueue_style( 'google-fonts' );
+  wp_enqueue_style( 't8_icomoon', get_template_directory_uri() . '/css/icons.css', false, $version, 'all' );
 
 }
 add_action('wp_enqueue_scripts', 'hb_tbu_styles_setup');
